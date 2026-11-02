@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import DeveloperFooter from '@/components/DeveloperFooter';
 import Header from '@/components/Header';
 import HeroSearch from '@/components/HeroSearch';
 import LessonViewer from '@/components/LessonViewer';
@@ -51,8 +50,6 @@ function App() {
             <ResultsGrid results={results} status={status} hasQuery={query.trim() !== ''} onOpen={setViewingLesson} />
           </section>
         </main>
-
-        <DeveloperFooter />
       </div>
 
       {viewingLesson && <LessonViewer lesson={viewingLesson} onClose={() => setViewingLesson(null)} />}
@@ -61,3 +58,4 @@ function App() {
 }
 
 export default App;
+    
